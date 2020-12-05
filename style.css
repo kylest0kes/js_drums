@@ -3,10 +3,38 @@ body, html {
     margin: 0;
 }
 
-.bg {
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
     background-image: url("./images/bkground.jpg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.drum-controls {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.control {
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    margin: 0 15px;
+    width: 90px;
+    height: 90px;
+}
+
+h1 {
+    color: white;
 }
