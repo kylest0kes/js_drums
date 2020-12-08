@@ -26,9 +26,10 @@ body, html {
     display: inline-block;
     border-style: solid;
     border-color: white;
-    margin: 0 15px;
+    margin: 5px 15px;
     width: 75px;
     height: 75px;
+    transition: all 0.07s;
 }
 
 h2 {
@@ -48,4 +49,10 @@ ul {
 
 li {
     text-align: center;
+}
+
+.pressed {
+    transform: scale(1.25,1.25);
+    border-color: rgb(241, 218, 3);
+    box-shadow: 0 0 10px rgb(241, 218, 3);
 }
